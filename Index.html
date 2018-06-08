@@ -3,11 +3,11 @@
 
 
 
-
-
 <script>
+    var _model = "[{"Id":1,"Number":"575-753-785","Type":"Mobile","Country":"Poland"},{"Id":2,"Number":"096-750-57-22","Type":"Mobile","Country":"Ukraine"},{"Id":3,"Number":"1-756-125-7856","Type":"Home","Country":"USA"},{"Id":4,"Number":"895-773-785","Type":"Office","Country":"GB"},{"Id":5,"Number":"2-322-750-67-22","Type":"Home","Country":"Australia"},{"Id":6,"Number":"1-566-125-7856","Type":"Office","Country":"Canada"}]";
+    
     var config = {};
-    config.model = @Html.Raw(Json.Encode(ViewData["dropList"]));
+    config.model = _model;
     config.captionArray = ["Id","Number", "Type", "Country"];
     config.tableCssClass = "someClass";
     config.displayProperty = "Country";
