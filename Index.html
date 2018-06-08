@@ -1,0 +1,19 @@
+
+<input type="text" class="form-control" id="_input" placeholder="Search" />
+
+
+
+
+
+<script>
+    var config = {};
+    config.model = @Html.Raw(Json.Encode(ViewData["dropList"]));
+    config.captionArray = ["Id","Number", "Type", "Country"];
+    config.tableCssClass = "someClass";
+    config.displayProperty = "Country";
+    config.idIsVisible = true;
+
+    $("#_input").DropDownMultiColumn(config);
+    $("#_input").attr("inputValue"); // get value
+
+</script>
