@@ -1,7 +1,7 @@
 ﻿jQuery.fn.extend({
     DropDownMultiColumn: function (configuration) {
 
-        var model = configuration.model;
+        var model = JSON.parse(configuration.model);
         var captionArr = configuration.captionArray;
         var displayProperty = configuration.displayProperty;
         var idIsVisible = configuration.idIsVisible === undefined ? true : configuration.idIsVisible;
